@@ -1,5 +1,5 @@
 
-# Midnight Canvas Portfolio
+# Midnight Dynamic Portfolio
 
 A modern, responsive portfolio built with React, TypeScript, Vite, and Tailwind CSS. Showcase your projects, skills, and contact information with a beautiful UI.
 
