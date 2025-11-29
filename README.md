@@ -72,6 +72,37 @@ src/
 - Remove unused UI elements from `src/components/ui/`.
 - Delete unused pages from `src/pages/`.
 
+## GitHub API Integration
+
+The Projects section automatically fetches repositories from your GitHub profile using the GitHub API.
+
+### Configuration
+
+1. Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` and set your GitHub username:
+   ```env
+   VITE_GITHUB_USERNAME=your-github-username
+   ```
+
+3. **Optional: Add a GitHub Personal Access Token** for higher API rate limits (recommended for production):
+   ```env
+   VITE_GITHUB_TOKEN=your-github-token
+   ```
+   
+   To create a GitHub Personal Access Token:
+   1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+   2. Click "Generate new token (classic)"
+   3. Select scope: `public_repo` (for public repositories only)
+   4. Copy the token and add it to your `.env` file
+
+### Rate Limits
+- Without token: 60 requests/hour
+- With token: 5,000 requests/hour
+
 ## Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 

@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import profileImg from "../images/placeholder.png";
 
 const About = () => {
   return (
@@ -22,14 +23,11 @@ const About = () => {
             </div>
           </div>
           <Card className="aspect-square bg-card rounded-3xl overflow-hidden card-glow hover-lift">
-            <div className="w-full h-full bg-gradient-to-br from-muted to-accent flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 400">
-                <rect fill="#333" width="400" height="400"/>
-                <text x="50%" y="50%" fontSize="24" fill="#666" textAnchor="middle" dy=".3em" fontFamily="Arial">
-                  About Image
-                </text>
-              </svg>
-            </div>
+            <img 
+              src={profileImg} 
+              alt="Profile" 
+              className="w-full h-full object-cover"
+            />
           </Card>
         </div>
       </div>
